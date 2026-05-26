@@ -110,11 +110,10 @@ git clone https://github.com/username/Pixel-Music-Challenge.git
 ## ✅ **Kunci Agar Demo Online Tidak Ikut ke Bash**
 
 ```markdown
-```bash
-... (kode bash di sini)
-```          ← TUTUP DULU DENGAN TIGA BACKTICK
 
----         ← (Opsional) garis pemisah
+```         
+
+---       
 
 ## 🌐 Demo Online   ← HEADING BARU DI LUAR CODE BLOCK
 
