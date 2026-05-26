@@ -1,0 +1,301 @@
+/* Font Pixel Retro */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', monospace;
+    background: linear-gradient(135deg, #0a0a2a 0%, #1a1a3a 100%);
+    color: #00ffcc;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* CRT Scanline Effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.1) 0px,
+        rgba(0, 0, 0, 0.1) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    pointer-events: none;
+    z-index: 999;
+}
+
+/* Container Utama */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Tombol Pixel */
+.pixel-btn {
+    font-family: 'Press Start 2P', monospace;
+    background: #2a2a4a;
+    border: 4px solid #00ffcc;
+    color: #00ffcc;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    box-shadow: 4px 4px 0px #008866;
+}
+
+.pixel-btn:hover {
+    background: #00ffcc;
+    color: #0a0a2a;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px #008866;
+}
+
+.pixel-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #008866;
+}
+
+/* Panel Jawaban */
+.answer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.answer-btn {
+    font-family: 'Press Start 2P', monospace;
+    background: #1a1a3a;
+    border: 3px solid #ff66cc;
+    color: #ff66cc;
+    padding: 15px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.1s;
+    font-size: 12px;
+}
+
+.answer-btn:hover {
+    background: #ff66cc;
+    color: #1a1a3a;
+    transform: scale(1.02);
+}
+
+/* Timer Bar */
+.timer-container {
+    background: #2a2a4a;
+    border: 2px solid #ffcc00;
+    height: 20px;
+    margin: 20px 0;
+}
+
+.timer-bar {
+    background: #ffcc00;
+    width: 100%;
+    height: 100%;
+    transition: width 0.1s linear;
+}
+
+/* Notifikasi */
+.notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Press Start 2P', monospace;
+    font-size: 24px;
+    padding: 20px 40px;
+    background: #0a0a2a;
+    border: 4px solid;
+    z-index: 1000;
+    animation: fadeOut 1s ease forwards;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.notification.correct {
+    border-color: #00ff66;
+    color: #00ff66;
+    text-shadow: 0 0 5px #00ff66;
+}
+
+.notification.wrong {
+    border-color: #ff3366;
+    color: #ff3366;
+    text-shadow: 0 0 5px #ff3366;
+}
+
+/* Screen Shake */
+.shake {
+    animation: shakeAnim 0.3s ease-in-out;
+}
+
+@keyframes shakeAnim {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    70% { opacity: 1; }
+    100% { opacity: 0; transform: translate(-50%, -50%) scale(1.5); visibility: hidden; }
+}
+
+/* Glitch Effect */
+.glitch {
+    animation: glitch 0.2s infinite;
+}
+
+@keyframes glitch {
+    0% { text-shadow: -2px 0 #ff3366, 2px 0 #00ffcc; }
+    50% { text-shadow: 2px 0 #ff3366, -2px 0 #00ffcc; }
+    100% { text-shadow: -2px 0 #ff3366, 2px 0 #00ffcc; }
+}
+
+/* Score Panel */
+.score-panel {
+    background: #0a0a2a;
+    border: 3px solid #ffcc00;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Leaderboard */
+.leaderboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1a1a3a;
+    border: 2px solid #00ffcc;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+    border: 1px solid #00ffcc;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body { font-size: 10px; }
+    .answer-grid { grid-template-columns: 1fr; }
+    .pixel-btn { padding: 8px 16px; }
+    .answer-btn { font-size: 8px; }
+    .notification { font-size: 14px; white-space: normal; width: 80%; text-align: center; }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', monospace;
+    background: linear-gradient(135deg, #0a0a2a 0%, #1a1a3a 100%);
+    color: #00ffcc;
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.1) 0px,
+        rgba(0, 0, 0, 0.1) 2px,
+        transparent 2px,
+        transparent 4px
+    );
+    pointer-events: none;
+    z-index: 999;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.pixel-btn {
+    font-family: 'Press Start 2P', monospace;
+    background: #2a2a4a;
+    border: 4px solid #00ffcc;
+    color: #00ffcc;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    box-shadow: 4px 4px 0 #008866;
+    font-size: 10px;
+}
+
+.pixel-btn:hover {
+    background: #00ffcc;
+    color: #0a0a2a;
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 #008866;
+}
+
+.pixel-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 #008866;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a2a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00ffcc;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffcc00;
+}
+
+/* Tambahkan di bagian <style> yang sudah ada */
+#audioProgress {
+    margin: 10px 0;
+}
+
+#audioProgressBar {
+    background: linear-gradient(90deg, #00ffcc, #ffcc00);
+    transition: width 0.1s linear;
+}
+
+#playFullAudioBtn {
+    animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); background: #ffcc00; color: #0a0a2a; }
+}
