@@ -100,3 +100,15 @@ git clone https://github.com/username/Pixel-Music-Challenge.git
 
 # 5. Akses website
 # http://localhost/pixel-music-challenge/
+
+
+
+
+
+
+🌐 Demo Online
+Proyek ini telah di-host secara publik dan dapat diakses melalui tautan berikut:
+
+🔗 https://musicgames.fwh.is
+
+Catatan: Hosting menggunakan layanan gratis InfinityFree, sehingga mungkin terdapat iklan kecil di bagian footer.
