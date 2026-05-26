@@ -1,0 +1,21 @@
+# =====================================================
+# ROBOTS.TXT - Pixel Music Challenge
+# Petunjuk untuk search engine
+# =====================================================
+
+User-agent: *
+Allow: /
+Allow: /dashboard.php
+Allow: /game.php
+Allow: /leaderboard.php
+Allow: /achievement.php
+Disallow: /admin/
+Disallow: /api/
+Disallow: /config/
+Disallow: /uploads/
+Disallow: /login.php
+Disallow: /register.php
+Disallow: /logout.php
+
+Sitemap: https://yourdomain.com/sitemap.xml
+Host: https://yourdomain.com
