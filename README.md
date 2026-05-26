@@ -80,6 +80,13 @@ Proyek ini dikembangkan sebagai tugas akhir mata kuliah Pemrograman Web. Tujuan 
 - MySQL
 
 ### Langkah-langkah
+## 🛠️ Prasyarat
+
+- Web server (Laragon / XAMPP)
+- PHP 7.4 atau lebih tinggi
+- MySQL
+
+## 🚀 Langkah-langkah Instalasi
 
 ```bash
 # 1. Clone repository
@@ -99,14 +106,4 @@ git clone https://github.com/username/Pixel-Music-Challenge.git
 # - Sesuaikan credential database dengan environment lokal
 
 # 5. Akses website
-# http://localhost/pixel-music-challenge/
-
----
-
-
-### 🌐 Demo Online
-Proyek ini telah di-host secara publik dan dapat diakses melalui tautan berikut:
-
-🔗 https://musicgames.fwh.is
-
-Catatan: Hosting menggunakan layanan gratis InfinityFree, sehingga mungkin terdapat iklan kecil di bagian footer.
+http://localhost/pixel-music-challenge/
