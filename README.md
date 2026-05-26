@@ -115,6 +115,6 @@ git clone https://github.com/username/Pixel-Music-Challenge.git
 
 ---       
 
-## 🌐 Demo Online   ← HEADING BARU DI LUAR CODE BLOCK
+## 🌐 Demo Online   
 
 🔗 https://musicgames.fwh.is
