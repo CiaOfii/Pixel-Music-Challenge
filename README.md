@@ -101,7 +101,7 @@ git clone https://github.com/username/Pixel-Music-Challenge.git
 # 5. Akses website
 # http://localhost/pixel-music-challenge/
 
-
+```bash
 
 
 
