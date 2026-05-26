@@ -105,5 +105,17 @@ git clone https://github.com/username/Pixel-Music-Challenge.git
 # - Buka config/koneksi.php
 # - Sesuaikan credential database dengan environment lokal
 
-# 5. Akses website
-http://localhost/pixel-music-challenge/
+---
+
+## ✅ **Kunci Agar Demo Online Tidak Ikut ke Bash**
+
+```markdown
+```bash
+... (kode bash di sini)
+```          ← TUTUP DULU DENGAN TIGA BACKTICK
+
+---         ← (Opsional) garis pemisah
+
+## 🌐 Demo Online   ← HEADING BARU DI LUAR CODE BLOCK
+
+🔗 https://musicgames.fwh.is
